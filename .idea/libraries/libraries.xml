@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="libraries">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/libraries" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars/3rdparty" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars/ext" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars/jdbc-driver" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/libraries" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars" />
+      <root url="file://$USER_HOME$/Downloads/libraries/jars/3rdparty" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars/3rdparty" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars/ext" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars/jdbc-driver" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars/3rdparty" recursive="false" type="SOURCES" />
+  </library>
+</component>
