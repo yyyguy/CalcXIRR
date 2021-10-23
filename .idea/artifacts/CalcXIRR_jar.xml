@@ -1,10 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="CalcXIRR:jar">
+  <artifact type="jar" build-on-make="true" name="CalcXIRR:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/CalcXIRR_jar</output-path>
     <root id="archive" name="CalcXIRR.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/resources/main/META-INF/MANIFEST.MF" />
-      </element>
       <element id="module-output" name="CalcXIRR" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/libraries/arrow-memory-0.3.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/libraries/arrow-vector-0.3.0.jar" path-in-jar="/" />
@@ -13,6 +10,7 @@
       <element id="extracted-dir" path="$USER_HOME$/Downloads/libraries/netty-common-4.1.69.Final.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/libraries/jars/dremio-sabot-kernel-18.1.0-202109222258120166-963adceb.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/libraries/jars/dremio-sabot-kernel-18.1.0-202109222258120166-963adceb-proto.jar" path-in-jar="/" />
+      <element id="module-source" name="CalcXIRR" />
     </root>
   </artifact>
 </component>
