@@ -9,12 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ebadc44-08d9-444b-b578-878e46e4968f" name="Changes" comment="Added Maven functionality.&#10;Revised the Transaction loading into an ArrayList. &#10;&#10;now using the following approach&#10;boolean add = txs.add(new Transaction(amount.value, when.buffer.toString()));&#10;&#10;As well, I completed the approach to the CalcXIRR UDF.&#10;&#10;Contains 4 functions as follows:&#10;- setup()&#10;- add()&#10;- output()&#10;- reset()&#10;&#10;The setup function - where initialization occurs.&#10;The add function is where each set of values for each record returned from the SQL query is used.">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/CalcXIRR_jar/CalcXIRR.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/BCI/xirr/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CalcXIRR_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CalcXIRR_jar.xml" afterDir="false" />
+    <list default="true" id="3ebadc44-08d9-444b-b578-878e46e4968f" name="Changes" comment="Moved main() class to a separate file.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jars.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CalcXIRR_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libraries.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalcXIRR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CalcXIRR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CalcXIRR_jar/CalcXIRR.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/main/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/BCI/xirr/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BCI/xirr/CalcXIRR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/BCI/xirr/CalcXIRR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/BCI/xirr/main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,12 +133,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/CalcXIRR_jar/CalcXIRR.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/CalcXIRR_jar" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fblue\IdeaProjects\CalcXIRR\out\artifacts\CalcXIRR_jar" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.BCI.xirr" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -141,7 +154,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.CalcXIRR">
+  <component name="RunManager" selected="JAR Application.CalcXIRR.jar">
     <configuration name="CalcXIRR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.BCI.xirr.CalcXIRR" />
       <module name="CalcXIRR" />
@@ -162,51 +175,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.BCI.xirr.main" />
-      <module name="CalcXIRR" />
-      <shortenClasspath name="ARGS_FILE" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.BCI.xirr.main" />
-      <module name="CalcXIRR" />
-      <shortenClasspath name="ARGS_FILE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.BCI.xirr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalcXIRR" type="JarApplication">
+    <configuration name="CalcXIRR.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/CalcXIRR_jar/CalcXIRR.jar" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\fblue\IdeaProjects\CalcXIRR" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="CalcXIRR:jar" />
-        </option>
-      </method>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.main" />
       <item itemvalue="Application.CalcXIRR" />
-      <item itemvalue="JAR Application.CalcXIRR" />
+      <item itemvalue="JAR Application.CalcXIRR.jar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.CalcXIRR.jar" />
         <item itemvalue="Application.CalcXIRR" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634865668074</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Moved main() class to a separate file.">
+      <created>1634949664191</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634949664191</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,12 +318,13 @@
     <MESSAGE value="Validate the approach for calling the Transactions via loading a Transaction array." />
     <MESSAGE value="Added Maven functionality.&#10;Revised the Transaction loading into an ArrayList." />
     <MESSAGE value="Added Maven functionality.&#10;Revised the Transaction loading into an ArrayList. &#10;&#10;now using the following approach&#10;boolean add = txs.add(new Transaction(amount.value, when.buffer.toString()));&#10;&#10;As well, I completed the approach to the CalcXIRR UDF.&#10;&#10;Contains 4 functions as follows:&#10;- setup()&#10;- add()&#10;- output()&#10;- reset()&#10;&#10;The setup function - where initialization occurs.&#10;The add function is where each set of values for each record returned from the SQL query is used." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Maven functionality.&#10;Revised the Transaction loading into an ArrayList. &#10;&#10;now using the following approach&#10;boolean add = txs.add(new Transaction(amount.value, when.buffer.toString()));&#10;&#10;As well, I completed the approach to the CalcXIRR UDF.&#10;&#10;Contains 4 functions as follows:&#10;- setup()&#10;- add()&#10;- output()&#10;- reset()&#10;&#10;The setup function - where initialization occurs.&#10;The add function is where each set of values for each record returned from the SQL query is used." />
+    <MESSAGE value="Moved main() class to a separate file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved main() class to a separate file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-wildcard-method">
+        <breakpoint type="java-wildcard-method">
           <properties class="Transaction" method="Transaction">
             <option name="EMULATED" value="true" />
           </properties>

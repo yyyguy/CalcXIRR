@@ -2,16 +2,12 @@
   <library name="libraries">
     <CLASSES>
       <root url="file://$USER_HOME$/Downloads/libraries" />
-      <root url="file://$USER_HOME$/Downloads/libraries/jars" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$USER_HOME$/Downloads/libraries" />
-      <root url="file://$USER_HOME$/Downloads/libraries/jars" />
     </SOURCES>
     <jarDirectory url="file://$USER_HOME$/Downloads/libraries" recursive="false" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars" recursive="false" />
     <jarDirectory url="file://$USER_HOME$/Downloads/libraries" recursive="false" type="SOURCES" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/libraries/jars" recursive="false" type="SOURCES" />
   </library>
 </component>
